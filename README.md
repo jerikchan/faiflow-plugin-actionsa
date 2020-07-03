@@ -4,6 +4,8 @@
 
 这里以目前公共前端中的项目运用为例子说明，感兴趣可以到 gitlab 中查看这几个项目的详细配置情况，例如 `faicomponent`、`faiupload`、`faifooter` 等几个项目
 
+本文提及的代码文件在项目 [faiflow-plugin-actions](http://gitlab.faidev.cc/frontend/faiflow-plugin-actions) 中可以找到
+
 ## 准备工作
 
 ### GitlabCI 配置文件
@@ -302,6 +304,8 @@ ci 构建的触发只在 master 分支推送时发送，需要配置 `only` 为 
 ## 总结
 
 上面的各个处理方案仍然比较散，没有统一封装起来，会考虑计划使用 @faiflow/cli 脚手架工具把这些逻辑封装起来，方便调用
+
+除了 ci 流程外，在开发阶段也可以通过 `husky`/`pretty-quick`/`commitlint` 等工具提升开发的代码质量和效率
 
 最后举一个所有阶段的配置栗子
 
